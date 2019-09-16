@@ -33,7 +33,7 @@ public class Manager_Alert_System : System.Web.Services.WebService
         //InitializeComponent(); 
         GetMyIP getIP = new GetMyIP();
         myIP = getIP.getLocalIP();
-        myIP = "51.140.146.129"
+        myIP = "51.140.143.126"
     }
 
     [WebMethod]
