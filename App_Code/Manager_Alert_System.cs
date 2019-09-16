@@ -13,13 +13,12 @@ using Manager_Alet_System;
 /// <summary>
 /// Summary description for Manager_Alert_System
 /// </summary>
-///[WebService(Namespace = "http://tempuri.org/")]
 [WebService(Namespace = "https://maswebservice20190912120055.azurewebsites.net")]
 [WebServiceBinding(ConformsTo = WsiProfiles.BasicProfile1_1)]
 [System.Web.Script.Services.ScriptService]
 public class Manager_Alert_System : System.Web.Services.WebService
 {
-    //Delerations
+    //Declerations
     string myIP;
     private static List<TcpClient> tcpClientsList = new List<TcpClient>();
     TcpClient client = new TcpClient();
@@ -34,8 +33,7 @@ public class Manager_Alert_System : System.Web.Services.WebService
         //InitializeComponent(); 
         GetMyIP getIP = new GetMyIP();
         myIP = getIP.getLocalIP();
-
-        //myIP = "https://maswebservice20190912120055.azurewebsites.net";
+        myIP = "51.140.146.129"
     }
 
     [WebMethod]
